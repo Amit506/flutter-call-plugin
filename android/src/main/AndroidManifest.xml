@@ -1,0 +1,5 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="me.leoletto.caller">
+
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+</manifest>
