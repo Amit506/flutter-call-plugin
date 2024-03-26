@@ -131,6 +131,14 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () => _stopCaller(),
               child: Text('Stop caller'),
             ),
+            TextField(
+              onChanged: (val)async{
+              
+              },
+            ),
+            TextButton(onPressed: ()async{
+ await Caller.block("+918595862313");
+            }, child: Text("block"))
           ],
         ),
       ),

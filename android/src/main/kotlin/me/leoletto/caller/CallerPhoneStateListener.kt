@@ -280,11 +280,14 @@ try {
     }
 
     private fun isSpam(phoneNumber:String):Boolean{
+        // TODO: add logic to decide number is spam or not
+       
+        return true;
 
         val sharedPreferences =context.getSharedPreferences(SHARED_PREFERENCES_NAME, Context.MODE_PRIVATE)
         val token = sharedPreferences.getString("token","")
         Log.d(CallerPlugin.PLUGIN_NAME, "shared Pref value background : $token")
-        val baseUrl = "https://callblocker-api.benam.me/api/public/spamIndicator"
+        val baseUrl = "url to detect spam or not"
 
         val countryCode = "IN" // example country code
 
